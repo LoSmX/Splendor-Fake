@@ -27,8 +27,3 @@ The following image visualizes the whole project lifecycle.
 
 ![Game Development Workflow](Img/workflow.png)
 
-## Task List
-### Unassigned Tasks:
-- [ ] M0000: Find out how to use the Issue tracker in Github.
-- [ ] M0001: Find out what the new github project features are capable of.
-- [ ] M0002: Find out about the other github tabs.
