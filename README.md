@@ -2,28 +2,27 @@
 
 ## This repository
 This repository consists of the following folder structure:
-- **Cheatsheet:** This folder contains various cheatsheet which help reusing code and knowledge
-- **Docs:** This folder holds all project relevant documents.
-- **Img:** This folders holds project relevant images.
-- **Links:** This folder consists all relevant links with videos and information. 
-- **Unity Project:** This folder holds the unity project.
-- **Unity Config:** This folder holds the unity configuration data.
+- **Cheatsheet:** Various cheatsheets which help in reusing code and knowledge
+- **Docs:** All project-relevant documents
+- **Img:** Project-relevant images
+- **Links:** All relevant links with videos and further information
+- **Unity Project:** The unity project
+- **Unity Config:** Unity configuration data
 
 ## How to contribute
-If you want to contribute fork this repository and work on your local copy help is always welcome.
+If you want to contribute, fork this repository and work on your local copy. Help is always welcome!
 
 ## Git workflow:
-- Choose a Open Issue
-- Create a branch in your fork.
-- Add your changes, push, create a PR.
+- Choose an Open Issue
+- Create a branch in your fork
+- Add your changes, push, and create a Pull Request.
 
 ## Game Dev Workflow
-- Concept:   Defining features, modular tasks and milestones
-- Pre-Production:   Gether all needed materials, assets information. Draw some UIs 
-- Production:    Develope all assets and the Game.  
-- Post-Production: Test, Bugfixes,
+- Concept: Define features, modular tasks and milestones.
+- Pre-Production: Gather all the necessary materials, assets, information, and draw some UIs.
+- Production: Create the assets and develop the game.  
+- Post-Production: Testing and bug fixing.
 
-The following image visualizes the whole project lifecycle.
+The following image visualizes the entire project lifecycle.
 
 ![Game Development Workflow](Img/workflow.png)
-
