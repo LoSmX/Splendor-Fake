@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwipeDetection : MonoBehaviour
+public class TouchDetection : MonoBehaviour
 {
     public Camera maincam;
+    public GameEvent onCoinschangedListener;
+
     public float zoomSpeed = 100;
     public float moveSpeed = 0.1f;
     public float rotSpeed = 0.01f;
@@ -21,24 +23,67 @@ public class SwipeDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Move camera
+        // One finger controls
         if (Input.touchCount == 1)
         {
+            Ray ray;
+            RaycastHit hit;
+            string touchedObjectName = null;
+            
+            //Get coins
+            if (Input.touches[0].phase == TouchPhase.Began)
+            {
+                ray = maincam.ScreenPointToRay(Input.touches[0].position);
+
+                if(Physics.Raycast(ray, out hit))
+                {
+                    touchedObjectName = hit.collider.name;
+
+                    Coins coins = new();
+
+                    if (string.Equals(touchedObjectName, "cw"))
+                    {
+                        coins.coinsArr[0]++;
+                    }
+                    if (string.Equals(touchedObjectName, "cbr"))
+                    {
+                        coins.coinsArr[1]++;
+                    }
+                    if (string.Equals(touchedObjectName, "cr"))
+                    {
+                        coins.coinsArr[2]++;
+                    }
+                    if (string.Equals(touchedObjectName, "cgr"))
+                    {
+                        coins.coinsArr[3]++;
+                    }
+                    if (string.Equals(touchedObjectName, "cbl"))
+                    {
+                        coins.coinsArr[4]++;
+                    }
+                    if (string.Equals(touchedObjectName, "cgo"))
+                    {
+                        coins.coinsArr[5]++;
+                    }
+
+                    onCoinschangedListener.Raise(coins);
+                }
+            }
+
+            // Move camera on finger swipe
             if (Input.touches[0].phase == TouchPhase.Moved)
             {
+                //Move Camera
                 Vector2 distance = Input.touches[0].position - startPos;
-
                 maincam.transform.Translate(Vector3.left * distance.y * Time.deltaTime * moveSpeed, Space.World);
                 maincam.transform.Translate(Vector3.forward * distance.x * Time.deltaTime * moveSpeed, Space.World);
             }
             startPos = Input.touches[0].position;
         }
 
-        
+        // Two finger controls
         if (Input.touchCount == 2)
         {
-            
-            
             // Zoom camera
             if (Input.touches[0].phase == TouchPhase.Began || Input.touches[1].phase == TouchPhase.Began)
             {
