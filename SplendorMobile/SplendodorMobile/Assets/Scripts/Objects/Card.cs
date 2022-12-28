@@ -7,6 +7,7 @@ public class Card : MonoBehaviour
 {
     public GameEvent PurchasedEvent;
     public const float upperBrimlength = 0.05f;
+    public int reservedBy = 0;
     public enum Type
     {
         green,
@@ -18,57 +19,85 @@ public class Card : MonoBehaviour
     public int[] costs = new int[5];
     public Coins.Color color;
     public int points;
-    public int posIndex;
+    public int slotIndex;
     public Type type;
 
-    virtual public bool buy(Player player)
+    // Move card to given position
+    public void move(Vector3 position)
     {
-     
-        CoinCollection cost = new(this.costs);
+        this.transform.position = transform.position;
+    }
 
-        cost -= player.cardBalance;
-        
-        if (cost.isZero())
-        {
-            int index = (int)this.color;
+    // Pay for the card
+    virtual public bool pay(Player player)
+    {
+        Debug.Log("Card");
 
-            // Set Player Variables
-            purchase(player, cost);
-        }
-        else
-        {
-            
-            if (player.coinsBalance.isAffordable(cost))
+        if (reservedBy == 0 || reservedBy == player.Id){
+            CoinCollection cost = new(this.costs);
+
+            cost -= player.cardBalance;
+
+            // if card free
+            if (cost.isZero())
             {
-                player.coinsBalance -= cost;
+                int index = (int)this.color;
+
+                // Set Player Variables
                 purchase(player, cost);
             }
             else
             {
-                return false;
+                if (player.coinsBalance.isAffordable(cost))
+                {
+                    purchase(player, cost);
+                }
+                else
+                {
+                    return false;
+                }
+
             }
-            
+            return true;
         }
-        return true;
+        else
+        {
+            return false;
+        }
     }
 
     private void purchase(Player player,CoinCollection cost)
     {
         int index = (int)this.color;
 
-        // Set Player Variables
+        // Set Player balance
+        player.coinsBalance -= cost;
         player.cardBalance.coinStacks[index].amount++;
-        player.score += this.points;
-        player.cardPos[index].position += new Vector3(-upperBrimlength, 0.001f, 0);
-        player.turnActionCounter = 3;
 
         // Move Card and disable
         this.transform.position = player.cardPos[index].position;
+        player.cardPos[index].position += new Vector3(-upperBrimlength, 0.001f, 0);
         BoxCollider collider = GetComponent<BoxCollider>();
         collider.enabled = false;
 
-        // Call purchase event
-        PurchasedEvent.Raise(this);
-        PurchasedEvent.Raise(cost);
+        // If card was reserved
+        if(reservedBy > 0)
+        {
+            player.freeReservedPos[this.slotIndex] = true;
+        }
+        else // else purchased from the table
+        {
+            PurchasedEvent.Raise(this);     // Draw new card
+        }
+
+        PurchasedEvent.Raise(cost);     // Raise the amount of the chip bank
+    }
+
+    public void reserve(Transform transform, int id, int slotIndex)
+    {
+        this.reservedBy = id;
+        this.move(transform.position);
+        this.slotIndex = slotIndex;
+        PurchasedEvent.Raise(this);     //draw new card
     }
 }
