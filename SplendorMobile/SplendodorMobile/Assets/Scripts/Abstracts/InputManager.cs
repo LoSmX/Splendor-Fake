@@ -17,6 +17,7 @@ public class InputManager : MonoBehaviour
     private float lastDistance;
     private GameObject clickedObject;
 
+    // Switch current player
     public void onEndTurnEvent(object data)
     {
         if((Player)data == p1)
@@ -29,6 +30,7 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    // When something is pressed call the on click event of the current player
     private void callOnClickEvent(Player currentPlayer, RaycastHit hit)
     {
         
