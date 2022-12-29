@@ -27,6 +27,6 @@ public class Nobel : Card
                 return true;
             }
         }
-        return true;
+        return false;
     }
 }

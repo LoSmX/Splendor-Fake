@@ -40,9 +40,11 @@ public class Player : MonoBehaviour
         {
             if (freeReservedPos[i] == true)
             {
-                card.reserve(reservedPos[i], Id, i);
+                card.reserve(Id, i);
+                card.move(reservedPos[i].position);
                 freeReservedPos[i] = false;
                 endTurn();
+                break;
             }
         }
     }
@@ -74,7 +76,8 @@ public class Player : MonoBehaviour
             Chip chip = (Chip)data;
 
             // Take if chip is gold and no gold taken yet
-            if (chip.color == Coins.Color.gold && !coinsTaken.Contains(chip.color)) {
+            if ((chip.color == Coins.Color.gold && !coinsTaken.Contains(chip.color))
+                || chip.color != Coins.Color.gold) {
                 // Take coin
                 if (chip.amount > 0 && coinsBalance.getCoinAmount() < 10)
                 {
@@ -117,12 +120,16 @@ public class Player : MonoBehaviour
                 if(card.pay(this) == true)
                 {
                     getCard(card);
-                    endTurn();
+                    if(card is not Nobel)
+                        endTurn();
                 }
             } // if gold coin was taken
             else if(turnActionCounter == 2 && coinsTaken.Contains(Coins.Color.gold) && data is not Nobel)
             {
-                reserveCard(card);
+                if(card.reservedBy == 0)
+                {
+                    reserveCard(card);
+                }
             }
         }
 

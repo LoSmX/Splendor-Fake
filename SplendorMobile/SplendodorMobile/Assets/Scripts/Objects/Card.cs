@@ -25,7 +25,7 @@ public class Card : MonoBehaviour
     // Move card to given position
     public void move(Vector3 position)
     {
-        this.transform.position = transform.position;
+        this.transform.position = position;
     }
 
     // Pay for the card
@@ -41,29 +41,23 @@ public class Card : MonoBehaviour
             // if card free
             if (cost.isZero())
             {
-                int index = (int)this.color;
-
                 // Set Player Variables
                 purchase(player, cost);
             }
             else
-            {
+            { //  Check if enough coins are available
                 if (player.coinsBalance.isAffordable(cost))
-                {
+                { 
                     purchase(player, cost);
                 }
                 else
                 {
                     return false;
                 }
-
             }
             return true;
         }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 
     private void purchase(Player player,CoinCollection cost)
@@ -71,11 +65,12 @@ public class Card : MonoBehaviour
         int index = (int)this.color;
 
         // Set Player balance
+
         player.coinsBalance -= cost;
         player.cardBalance.coinStacks[index].amount++;
 
         // Move Card and disable
-        this.transform.position = player.cardPos[index].position;
+        this.move(player.cardPos[index].position);
         player.cardPos[index].position += new Vector3(-upperBrimlength, 0.001f, 0);
         BoxCollider collider = GetComponent<BoxCollider>();
         collider.enabled = false;
@@ -93,11 +88,10 @@ public class Card : MonoBehaviour
         PurchasedEvent.Raise(cost);     // Raise the amount of the chip bank
     }
 
-    public void reserve(Transform transform, int id, int slotIndex)
+    public void reserve(int id, int slotIndex)
     {
         this.reservedBy = id;
-        this.move(transform.position);
-        this.slotIndex = slotIndex;
         PurchasedEvent.Raise(this);     //draw new card
+        this.slotIndex = slotIndex;
     }
 }

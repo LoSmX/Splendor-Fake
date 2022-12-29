@@ -286,10 +286,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000003000000050000000000000000000000
   color: 0
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &28344677
 BoxCollider:
@@ -403,8 +404,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39701094}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.28, z: -0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.27999997, z: 0.000000039736435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -429,10 +430,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0400000001000000000000000000000002000000
   color: 3
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &47556007
 BoxCollider:
@@ -503,10 +505,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000400000000000000
   color: 0
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &75463222
 BoxCollider:
@@ -605,10 +608,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000050000000000000000000000
   color: 0
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &84731647
 BoxCollider:
@@ -954,10 +958,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000002000000000000000000000002000000
   color: 0
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &108940407
 BoxCollider:
@@ -972,6 +977,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.00001, y: 14.699997, z: 0.17212118}
   m_Center: {x: 0, y: 0.00012207031, z: -0.08606059}
+--- !u!4 &110756227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3059842449397295866, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 1009637090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114545597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,10 +1569,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000000000000010000000000000002000000
   color: 1
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &164144597
 BoxCollider:
@@ -1577,6 +1588,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.00001, y: 14.699997, z: 0.17212118}
   m_Center: {x: 0, y: 0.00012207031, z: -0.08606059}
+--- !u!4 &165476690 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4527386070159644818, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 1009637090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &167244321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,10 +1858,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000004000000000000000000000000000000
   color: 3
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &220301436
 BoxCollider:
@@ -2621,10 +2638,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0700000000000000000000000000000000000000
   color: 4
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &312414220
 BoxCollider:
@@ -2639,6 +2657,79 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2100001, y: 0.0017212362, z: 0.147}
   m_Center: {x: 0, y: 0.0008606061, z: 0}
+--- !u!1001 &315113495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1514496679}
+    m_Modifications:
+    - target: {fileID: 1245690889305544426, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686664310485960822, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985177316913817370, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_Name
+      value: pos1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527386070159644818, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671334788353062645, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_Name
+      value: CardSlots p2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8044987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
 --- !u!1 &330452566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,10 +2824,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000002000000000000000100000000000000
   color: 2
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &332183185
 BoxCollider:
@@ -2913,10 +3005,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000003000000020000000000000003000000
   color: 2
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &357251874
 BoxCollider:
@@ -2949,10 +3042,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000000000000010000000100000001000000
   color: 1
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &357946017
 BoxCollider:
@@ -2967,103 +3061,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.00001, y: 14.699997, z: 0.17212118}
   m_Center: {x: 0, y: 0.00012207031, z: -0.08606059}
---- !u!1 &362647406
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 362647407}
-  - component: {fileID: 362647409}
-  - component: {fileID: 362647408}
-  m_Layer: 0
-  m_Name: brnum
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &362647407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362647406}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: -0.13}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1858232497}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
---- !u!102 &362647408
+--- !u!102 &362647408 stripped
 TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 53706759529632240, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+  m_PrefabInstance: {fileID: 53706759840243328}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362647406}
-  m_Text: 1
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 4
-  m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 12800000, guid: b8af58820f69b474e8f63dc40a702fbc, type: 3}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
---- !u!23 &362647409
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362647406}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b8af58820f69b474e8f63dc40a702fbc, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &378720832 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8720115569709336221, guid: b9ca2c82d2003af4d8c744c03dfbae98, type: 3}
@@ -3082,10 +3084,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000002000000010000000000000001000000
   color: 3
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &378720840
 BoxCollider:
@@ -3118,10 +3121,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000001000000030000000100000000000000
   color: 1
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &389955791
 BoxCollider:
@@ -3387,10 +3391,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000010000000200000000000000
   color: 1
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &469108815
 BoxCollider:
@@ -3423,10 +3428,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000030000000000000000000000
   color: 3
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &477494238
 BoxCollider:
@@ -3459,10 +3465,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000000000000000000000200000004000000
   color: 2
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &511554666
 BoxCollider:
@@ -3495,10 +3502,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000000000000000000000100000003000000
   color: 3
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &522458630
 BoxCollider:
@@ -3513,6 +3521,91 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.00001, y: 14.699997, z: 0.17212118}
   m_Center: {x: 0, y: 0.00012207031, z: -0.08606059}
+--- !u!1001 &527221571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1934825709}
+    m_Modifications:
+    - target: {fileID: 53706759529632238, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_Name
+      value: TextRender
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5995877
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.696741
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632240, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_Text
+      value: 'Reservde:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632240, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_Anchor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632240, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_OffsetZ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632240, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_RichText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632240, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_Color.rgba
+      value: 4281348144
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
 --- !u!1 &530688631
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,6 +3718,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4463149083286388, guid: 2e57ba42788234646b2d6b76f15dac76, type: 3}
   m_PrefabInstance: {fileID: 2086508452}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &531521210 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1245690889305544426, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 315113495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &532687852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8720115569709336221, guid: 2768e63c04e5ca74a99cd4587263921f, type: 3}
@@ -3643,10 +3741,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000500000000000000
   color: 3
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &532687858
 BoxCollider:
@@ -3679,10 +3778,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000005000000030000000300000000000000
   color: 4
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &542714599
 BoxCollider:
@@ -3720,8 +3820,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549099039}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.14, z: -0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1399998, z: -0.000000019868217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3783,10 +3883,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000030000000500000000000000
   color: 1
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &560085505
 BoxCollider:
@@ -3819,10 +3920,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000001000000010000000000000001000000
   color: 3
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &562984986
 BoxCollider:
@@ -3902,10 +4004,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000003000000000000000300000005000000
   color: 2
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &587575199
 BoxCollider:
@@ -4014,10 +4117,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000000000004000000
   color: 1
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &608335146
 BoxCollider:
@@ -4055,10 +4159,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000030000000200000002000000
   color: 4
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &635759910
 BoxCollider:
@@ -4293,10 +4398,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0400000000000000000000000000000000000000
   color: 2
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &678362591
 BoxCollider:
@@ -4476,10 +4582,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0400000000000000000000000000000004000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!114 &678382211
 MonoBehaviour:
@@ -4494,10 +4601,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0000000000000000000000000400000004000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &678382212
 BoxCollider:
@@ -4538,10 +4646,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0000000004000000040000000000000000000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!114 &678382222
 MonoBehaviour:
@@ -4556,10 +4665,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0000000000000000040000000400000000000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &678382223
 BoxCollider:
@@ -4654,10 +4764,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000002000000000000000000000003000000
   color: 3
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &686882339
 BoxCollider:
@@ -4690,10 +4801,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000030000000700000000000000
   color: 2
   points: 5
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &693519172
 BoxCollider:
@@ -4805,10 +4917,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000001000000010000000100000001000000
   color: 0
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &724877217
 BoxCollider:
@@ -4992,7 +5105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.727
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5000,7 +5113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.439
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5018,17 +5131,21 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 4252864622878300, guid: 9d012b73caba62246906034d78994c42, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_Color.b
-      value: 0.96470594
+      value: 0.8745099
       objectReference: {fileID: 0}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_Color.g
-      value: 0.9843138
+      value: 0.94117653
       objectReference: {fileID: 0}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_Color.r
-      value: 0.9960785
+      value: 0.9921569
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d012b73caba62246906034d78994c42, type: 3}
@@ -5049,7 +5166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.727
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5057,7 +5174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.584
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5076,12 +5193,16 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42, type: 3}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_Color.b
-      value: 0.9764151
+      value: 0.8820755
       objectReference: {fileID: 0}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_Color.g
-      value: 0.9911557
+      value: 0.9530592
       objectReference: {fileID: 0}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_Color.r
@@ -5107,10 +5228,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0000000000000000030000000300000003000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &787665888
 BoxCollider:
@@ -5354,10 +5476,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000000000000000000000200000002000000
   color: 1
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &835892315
 BoxCollider:
@@ -5748,10 +5871,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0500000003000000030000000000000003000000
   color: 3
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &935591885
 BoxCollider:
@@ -5784,10 +5908,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000000000003000000
   color: 0
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &936134406
 BoxCollider:
@@ -5907,10 +6032,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000300000000000000
   color: 1
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &948958353
 BoxCollider:
@@ -5943,10 +6069,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000005000000000000000000000000000000
   color: 2
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &950316127
 BoxCollider:
@@ -6010,10 +6137,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0600000003000000000000000000000003000000
   color: 4
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &959747691
 BoxCollider:
@@ -6046,10 +6174,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0500000000000000000000000000000003000000
   color: 4
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &960928379
 BoxCollider:
@@ -6263,10 +6392,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0700000000000000000000000000000003000000
   color: 4
   points: 5
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &966962676
 BoxCollider:
@@ -6624,6 +6754,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001840904}
   m_CullTransparentMesh: 1
+--- !u!1001 &1009637090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1514496679}
+    m_Modifications:
+    - target: {fileID: 1245690889305544426, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245690889305544426, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686664310485960822, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686664310485960822, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985177316913817370, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_Name
+      value: pos1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059842449397295866, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059842449397295866, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527386070159644818, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527386070159644818, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671334788353062645, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_Name
+      value: CardSlots p1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5497251
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8044987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969191022179144067, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
 --- !u!1 &1010539612
 GameObject:
   m_ObjectHideFlags: 0
@@ -7344,10 +7567,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000002000000020000000300000000000000
   color: 0
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1087821945
 BoxCollider:
@@ -7418,10 +7642,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000001000000000000000200000003000000
   color: 0
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1094895785
 BoxCollider:
@@ -7491,10 +7716,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000001000000000000000100000001000000
   color: 2
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1130706969
 BoxCollider:
@@ -7527,10 +7753,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000003000000020000000000000000000000
   color: 2
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1136338017
 BoxCollider:
@@ -7563,10 +7790,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000001000000020000000000000000000000
   color: 0
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1139143431
 BoxCollider:
@@ -8189,10 +8417,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000600000000000000
   color: 3
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1171235322
 BoxCollider:
@@ -8357,10 +8586,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0400000004000000000000000000000000000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &1205281661
 BoxCollider:
@@ -8547,10 +8777,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000040000000000000000000000
   color: 4
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1247051309
 BoxCollider:
@@ -8583,10 +8814,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000006000000030000000000000000000000
   color: 0
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1251264067
 BoxCollider:
@@ -8881,10 +9113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000002000000000000000000000000000000
   color: 4
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1281805003
 BoxCollider:
@@ -8948,10 +9181,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000020000000400000001000000
   color: 1
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1295493845
 BoxCollider:
@@ -9101,6 +9335,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297889053}
   m_CullTransparentMesh: 1
+--- !u!4 &1298530665 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3059842449397295866, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 315113495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1298870542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7128163358686651496, guid: b9ca2c82d2003af4d8c744c03dfbae98, type: 3}
@@ -9119,10 +9358,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000003000000010000000000000000000000
   color: 2
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1298870550
 BoxCollider:
@@ -9155,10 +9395,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000000000000030000000000000003000000
   color: 0
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1299169339
 BoxCollider:
@@ -9326,10 +9567,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000003000000000000000000000000000000
   color: 4
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1309081564
 BoxCollider:
@@ -9617,10 +9859,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0300000000000000000000000300000003000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &1318155188
 BoxCollider:
@@ -9747,6 +9990,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332390194}
   m_CullTransparentMesh: 1
+--- !u!4 &1337358241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4527386070159644818, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 315113495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1338915230 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1066350465786223407, guid: c83bfe054c4c9b94b8b7524ed3c0dbb7, type: 3}
@@ -9891,10 +10139,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0000000003000000030000000300000000000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &1346401623
 BoxCollider:
@@ -10138,10 +10387,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000000000000010000000100000002000000
   color: 1
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1363353050
 BoxCollider:
@@ -10346,10 +10596,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000001000000000000000000000001000000
   color: 0
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1367230383
 BoxCollider:
@@ -10517,10 +10768,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000005000000000000000000000000000000
   color: 2
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1369460309
 BoxCollider:
@@ -10548,10 +10800,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0300000003000000000000000000000003000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &1375862152
 BoxCollider:
@@ -10620,10 +10873,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000030000000600000003000000
   color: 2
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1380953898
 BoxCollider:
@@ -10661,8 +10915,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408261284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.07, z: -0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.06999971, z: -0.0000000049670543}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10758,10 +11012,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 0}
+  reservedBy: 0
   costs: 0300000003000000030000000000000000000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 3
 --- !u!65 &1420742735
 BoxCollider:
@@ -10837,10 +11092,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000001000000000000000100000001000000
   color: 2
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1449379360
 BoxCollider:
@@ -10873,10 +11129,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000000000000030000000200000000000000
   color: 3
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1452085799
 BoxCollider:
@@ -10909,10 +11166,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000001000000010000000100000000000000
   color: 4
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1452765550
 BoxCollider:
@@ -10945,10 +11203,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000004000000010000000000000000000000
   color: 4
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1456055154
 BoxCollider:
@@ -10981,10 +11240,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000000000007000000
   color: 3
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1461924696
 BoxCollider:
@@ -11022,10 +11282,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000002000000020000000000000001000000
   color: 3
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1472152332
 BoxCollider:
@@ -11058,10 +11319,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000020000000000000002000000
   color: 3
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1477432480
 BoxCollider:
@@ -11094,10 +11356,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000000000000020000000000000000000000
   color: 2
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1480038941
 BoxCollider:
@@ -11411,6 +11674,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4376350516095834, guid: 9884b1a9ded4dc240b53c0978ec88137, type: 3}
   m_PrefabInstance: {fileID: 140515560}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1514496679 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+  m_PrefabInstance: {fileID: 527221571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1517376603 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5845906743243909837, guid: b9ca2c82d2003af4d8c744c03dfbae98, type: 3}
@@ -11429,10 +11697,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000000000000020000000200000000000000
   color: 4
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1517376611
 BoxCollider:
@@ -11653,10 +11922,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000000000006000000
   color: 4
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1531870704
 BoxCollider:
@@ -11734,10 +12004,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000003000000060000000300000000000000
   color: 1
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1539619329
 BoxCollider:
@@ -11898,10 +12169,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000002000000040000000100000000000000
   color: 0
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1555620674
 BoxCollider:
@@ -12069,10 +12341,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000000000000000000000300000006000000
   color: 3
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1560034833
 BoxCollider:
@@ -12105,10 +12378,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000300000007000000
   color: 3
   points: 5
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1572259345
 BoxCollider:
@@ -12179,10 +12453,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000000000000000000000000000001000000
   color: 3
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1610017257
 BoxCollider:
@@ -12215,10 +12490,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000000000000000000000000000000000000
   color: 2
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1610943661
 BoxCollider:
@@ -12421,10 +12697,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000003000000000000000300000002000000
   color: 4
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1621844098
 BoxCollider:
@@ -12494,10 +12771,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000300000005000000
   color: 3
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1646529706
 BoxCollider:
@@ -12512,6 +12790,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2100001, y: 0.0017212362, z: 0.147}
   m_Center: {x: 0, y: 0.0008606061, z: 0}
+--- !u!4 &1646719235 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1686664310485960822, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 315113495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1647773711
 GameObject:
   m_ObjectHideFlags: 0
@@ -12766,6 +13049,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4350637049652996, guid: ac1d6bc633cb75f43b455f34daf7fd73, type: 3}
   m_PrefabInstance: {fileID: 1687441028}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1693071588 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1686664310485960822, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 1009637090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1702541231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12833,10 +13121,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0500000000000000000000000000000000000000
   color: 1
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1704247278
 BoxCollider:
@@ -13047,10 +13336,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000003000000070000000000000000000000
   color: 1
   points: 5
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1740660614
 BoxCollider:
@@ -13363,8 +13653,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754451852}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21, z: -0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.20999989, z: -0.000000039736435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13612,10 +13902,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000001000000010000000200000001000000
   color: 0
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1804538255
 BoxCollider:
@@ -13923,10 +14214,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000002000000000000000300000000000000
   color: 1
   points: 1
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1876007695
 BoxCollider:
@@ -13959,10 +14251,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0100000001000000020000000100000000000000
   color: 4
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1894672273
 BoxCollider:
@@ -13995,10 +14288,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000000000005000000
   color: 4
   points: 2
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1895069358
 BoxCollider:
@@ -14031,10 +14325,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000010000000300000001000000
   color: 4
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1896686588
 BoxCollider:
@@ -14211,6 +14506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7518ffcadd292ba45aba141ea066ca53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: 2
   hud: {fileID: 310358883}
   npos: {fileID: 904402538}
   cardPos:
@@ -14219,11 +14515,14 @@ MonoBehaviour:
   - {fileID: 653984660}
   - {fileID: 978013923}
   - {fileID: 1529394027}
+  reservedPos:
+  - {fileID: 1298530665}
+  - {fileID: 531521210}
+  - {fileID: 1337358241}
+  - {fileID: 1646719235}
   EndTrunEvent: {fileID: 11400000, guid: 9195040900ae47d42b2bf991b388c3bd, type: 2}
-  score: 0
   hasNobel: 0
-  turnActionCounter: 0
-  coinsTaken: 
+  freeReservedPos: 01010101
 --- !u!1 &1916931766
 GameObject:
   m_ObjectHideFlags: 0
@@ -14270,6 +14569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7518ffcadd292ba45aba141ea066ca53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Id: 1
   hud: {fileID: 446602352}
   npos: {fileID: 177503225}
   cardPos:
@@ -14278,11 +14578,14 @@ MonoBehaviour:
   - {fileID: 954180738}
   - {fileID: 530688632}
   - {fileID: 167244322}
+  reservedPos:
+  - {fileID: 110756227}
+  - {fileID: 1959580740}
+  - {fileID: 165476690}
+  - {fileID: 1693071588}
   EndTrunEvent: {fileID: 11400000, guid: 9195040900ae47d42b2bf991b388c3bd, type: 2}
-  score: 0
   hasNobel: 0
-  turnActionCounter: 0
-  coinsTaken: 
+  freeReservedPos: 01010101
 --- !u!1 &1926195429
 GameObject:
   m_ObjectHideFlags: 0
@@ -14319,6 +14622,105 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4534449285516404, guid: 0941535f5a7c0d846a45a6370dc4036b, type: 3}
   m_PrefabInstance: {fileID: 1217235697}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1934825708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934825709}
+  - component: {fileID: 1934825712}
+  - component: {fileID: 1934825711}
+  - component: {fileID: 1934825710}
+  m_Layer: 0
+  m_Name: ReservedZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934825709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934825708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.599, y: 1.3, z: -0.050697327}
+  m_LocalScale: {x: 0.05, y: 1, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1514496679}
+  m_Father: {fileID: 839382270}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1934825710
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934825708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1934825711
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934825708}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: dbaeace6d2c90f64b82a9633c5dd72ff, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1934825712
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934825708}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1936698791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2922212997593681698, guid: 2768e63c04e5ca74a99cd4587263921f, type: 3}
@@ -14337,10 +14739,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000060000000000000000000000
   color: 2
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1936698797
 BoxCollider:
@@ -14373,10 +14776,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000070000000000000000000000
   color: 1
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1941718028
 BoxCollider:
@@ -14436,6 +14840,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09fd774473e8b114b8d4338ec5fc5d2c, type: 3}
+--- !u!4 &1959580740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1245690889305544426, guid: 75331b3c81341844fa70672f309b51b9, type: 3}
+  m_PrefabInstance: {fileID: 1009637090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1960656639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6362586710539213250, guid: b00c5facac2e91048ae6717e7a3297ae, type: 3}
@@ -14454,10 +14863,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000007000000000000000000000000000000
   color: 0
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1960656647
 BoxCollider:
@@ -14697,10 +15107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0600000000000000000000000000000000000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &1976759130
 BoxCollider:
@@ -14733,10 +15144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000100000002000000
   color: 2
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &1980884055
 BoxCollider:
@@ -14837,10 +15249,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000000000000030000000500000003000000
   color: 1
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &1998959272
 BoxCollider:
@@ -14904,10 +15317,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0200000000000000000000000200000000000000
   color: 1
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &2001698127
 BoxCollider:
@@ -15016,10 +15430,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000006000000000000000000000000000000
   color: 1
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 1
 --- !u!65 &2037190997
 BoxCollider:
@@ -15057,10 +15472,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000000000000000000000700000000000000
   color: 2
   points: 4
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &2061130355
 BoxCollider:
@@ -15093,10 +15509,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0300000007000000000000000000000000000000
   color: 0
   points: 5
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &2071475863
 BoxCollider:
@@ -15309,10 +15726,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000002000000000000000200000000000000
   color: 4
   points: 0
-  posIndex: 0
+  slotIndex: 0
   type: 0
 --- !u!65 &2097741771
 BoxCollider:
@@ -15432,10 +15850,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PurchasedEvent: {fileID: 11400000, guid: ee33fcf8cfe8dba4493da9a01cf7df95, type: 2}
+  reservedBy: 0
   costs: 0000000003000000050000000300000003000000
   color: 0
   points: 3
-  posIndex: 0
+  slotIndex: 0
   type: 2
 --- !u!65 &2139599146
 BoxCollider:
@@ -15450,3 +15869,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2100001, y: 0.0017212362, z: 0.147}
   m_Center: {x: 0, y: 0.0008606061, z: 0}
+--- !u!1001 &53706759840243328
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1858232497}
+    m_Modifications:
+    - target: {fileID: 53706759529632238, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_Name
+      value: brnum
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 53706759529632239, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56576e143c1b19a48b49e2ab2c37f67b, type: 3}

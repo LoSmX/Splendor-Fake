@@ -91,18 +91,20 @@ public class CoinCollection : Coins
     public bool isAffordable(CoinCollection cost)
     {
         //Check if balance is greater or equal the cost
-        for (int i = 0; i < this.coinStacks.Length; i++)
+        for (int i = 0; i < this.coinStacks.Length -1; i++)
         {
-            if(this.coinStacks[i].amount < cost.coinStacks[i].amount)
+            int diff = cost.coinStacks[i].amount - this.coinStacks[i].amount;
+            if (diff > 0)
             {
                 Debug.Log("Missing color = " + colorOrder[i].ToString());
                 Debug.Log("Balance = " + this.coinStacks[i].amount.ToString() + 
                     " and costs are " + cost.coinStacks[i].amount.ToString());
-                return false;
+                cost.coinStacks[i].amount -= diff;
+                cost.coinStacks[(int) Coins.Color.gold].amount += diff;
             }    
         }
 
-        return true;
+        return (cost.coinStacks[(int)Coins.Color.gold].amount <= this.coinStacks[(int)Coins.Color.gold].amount);
     }
 
     public bool isZero()
