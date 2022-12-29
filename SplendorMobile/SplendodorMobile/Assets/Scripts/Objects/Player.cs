@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
             Chip chip = (Chip)data;
 
             // Take if chip is gold and no gold taken yet
-            if ((chip.color == Coins.Color.gold && !coinsTaken.Contains(chip.color))
+            if ((chip.color == Coins.Color.gold && coinsTaken.Count == 0)
                 || chip.color != Coins.Color.gold) {
                 // Take coin
                 if (chip.amount > 0 && coinsBalance.getCoinAmount() < 10)
