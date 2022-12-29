@@ -30,7 +30,7 @@ public class Deck : MonoBehaviour
                 randCard.transform.position = cardPos[i].position;
                 cards[i] = randCard;
                 randCard.gameObject.SetActive(true);
-                randCard.posIndex = i;
+                randCard.slotIndex = i;
                 freePos[i] = false;
                 deck.Remove(randCard);
                 return;
@@ -45,7 +45,7 @@ public class Deck : MonoBehaviour
             Card card = (Card)data;
             if(card.type == type)
             {
-                freePos[card.posIndex] = true;
+                freePos[card.slotIndex] = true;
             }
         }
     }

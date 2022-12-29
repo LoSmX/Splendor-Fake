@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,29 +11,22 @@ public class Nobel : Card
         points = 3;
     }
 
-    override public bool buy(Player player)
+    override public bool pay(Player player)
     {
-        if(player.hasNobel == true)
-        {
-            return false;
-        }
-        else
+        Debug.Log("Nobel");
+
+        if (player.hasNobel == false)
         {
             CoinCollection cost = new(this.costs);
             cost -= player.cardBalance;
 
-            if(cost.isZero())
+            if (cost.isZero())
             {
                 player.hasNobel = true;
-                player.score += this.points;
-                player.turnActionCounter = 3;
-                this.transform.position = player.npos.position;
-            }
-            else
-            {
-                return false;
+                move(player.npos.position);
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }
