@@ -31,7 +31,7 @@ public class InputManager : MonoBehaviour
     }
 
     // When something is pressed call the on click event of the current player
-    private void callOnClickEvent(Player currentPlayer, RaycastHit hit)
+    private void callOnClickEvent(RaycastHit hit)
     {
         
         if (hit.collider.gameObject.TryGetComponent<Nobel>(out Nobel nobel))
@@ -95,7 +95,7 @@ public class InputManager : MonoBehaviour
                     // if object same as last clicked object call Click event
                     if (clickedObject == hit.collider.gameObject)
                     {
-                        callOnClickEvent(currentPlayer, hit);
+                        callOnClickEvent(hit);
                     }
                 }
             }
